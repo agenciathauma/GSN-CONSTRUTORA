@@ -1,533 +1,612 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HiperFitness | Suplementos em Patos de Minas e Carmo do Paranaíba</title>
-<meta name="description" content="Whey, creatina, pré-treino, vitaminas e moda fitness em Patos de Minas. Entrega grátis na cidade, frete grátis em MG acima de R$ 299 e envio para todo o Brasil. Peça pelo WhatsApp.">
-<meta property="og:title" content="HiperFitness | Suplementos em Patos de Minas">
-<meta property="og:description" content="Suplementos, vitaminas e moda fitness das melhores marcas, com ofertas toda semana. Entrega grátis em Patos de Minas.">
-<meta name="theme-color" content="#000000">
+<title>GSN Construtora</title>
+<meta name="description" content="GSN Construtora, Engenharia e Arquitetura em Patos de Minas: projeto, construção e execução de obra, casas à venda e Minha Casa Minha Vida.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Store",
-  "name": "HiperFitness Suplementos",
-  "alternateName": "AX Suplementos",
-  "description": "Loja de suplementos, vitaminas e moda fitness em Patos de Minas e Carmo do Paranaíba.",
-  "telephone": "+55 34 97601-0694",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rua Major Gote, 1085 - Centro",
-    "addressLocality": "Patos de Minas",
-    "addressRegion": "MG",
-    "addressCountry": "BR"
-  },
-  "sameAs": ["https://www.instagram.com/hiperfitnesss/"]
-}
-</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
+/* Layout: obra de arquitetura em preto e dourado — capa dividida (texto + foto com linha de cota), ficha técnica das casas à venda, grade de obras com galeria, faixa do processo, MCMV, avaliações reais e contato */
 :root{
-  --black:#000000;
-  --surface:#141416;
-  --surface-2:#1C1C1F;
-  --line:#2C2C31;
-  --orange:#FF5B0F;
-  --orange-deep:#D94A06;
-  --white:#FFFFFF;
-  --steel:#A3A3AB;
-  --wrap:1180px;
-  --gutter:clamp(16px,4vw,40px);
+  --ink:#0E0D0B;          /* preto quente, fundo */
+  --slab:#181613;         /* superfície */
+  --line:#34302A;         /* fios e bordas */
+  --paper:#EEE8DE;        /* texto principal, tom de reboco */
+  --muted:#A69E92;        /* texto de apoio */
+  --gold:#E2A93A;         /* dourado da marca */
+  --gold-hi:#F6C95C;      /* dourado claro do degradê do logo */
+  --f-display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --wrap:1240px;
+  color-scheme:dark;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--black);color:var(--white);font-family:"Archivo","Roboto Condensed","Arial Narrow",system-ui,sans-serif;font-stretch:100%;font-size:17px;line-height:1.55;overflow-x:hidden}
-img,svg{display:block;max-width:100%}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.mono{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
 
-/* type */
-.display{font-weight:900;font-style:italic;font-stretch:72%;text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
-h2.display{font-size:clamp(2.4rem,6.4vw,4.6rem)}
-.lede{color:var(--steel);font-size:1.12rem;max-width:56ch}
+/* faixa da prévia */
+.preview{background:var(--gold);color:#1B1408;font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;text-align:center;padding:7px 16px}
+.preview b{font-weight:500}
 
-/* preview strip */
-.preview{background:var(--orange);color:var(--black);font-size:.86rem;font-weight:600;text-align:center;padding:8px var(--gutter)}
+/* topo */
+.nav{position:sticky;top:0;z-index:20;background:rgba(14,13,11,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.logo{display:flex;align-items:flex-end;gap:9px;text-decoration:none}
+.logo svg{width:26px;height:30px;flex:none}
+.logo .lw{display:flex;flex-direction:column;line-height:1}
+.logo .lw small{font-family:var(--f-body);font-size:10.5px;letter-spacing:.06em;color:var(--muted);margin-bottom:1px}
+.logo .lw strong{font-family:var(--f-display);font-weight:800;font-size:30px;letter-spacing:-.04em;line-height:.8}
+.links{display:flex;gap:28px;font-size:15px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;font:600 15.5px/1 var(--f-body);text-decoration:none;border:1px solid var(--gold);color:var(--gold);background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:rgba(226,169,58,.1)}
+.btn.solid{background:var(--gold);color:#1B1408}
+.btn.solid:hover{background:var(--gold-hi)}
+.btn svg{width:18px;height:18px;flex:none}
+.nav .btn{min-height:42px;padding:0 16px;font-size:14.5px}
 
-/* header */
-.top{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
-.brand b{font-weight:900;font-style:italic;font-stretch:78%;font-size:1.6rem;letter-spacing:-.01em}
-.brand svg{width:100%;height:7px;margin-top:2px}
-.brand small{font-size:.7rem;color:var(--steel);margin-top:4px;font-stretch:90%}
-.nav{display:flex;align-items:center;gap:26px}
-.nav a.link{text-decoration:none;color:var(--steel);font-size:.95rem}
-.nav a.link:hover{color:var(--white)}
+/* capa */
+.hero{border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(44px,6.2vw,84px);font-variation-settings:"wdth" 82,"opsz" 96;font-weight:750}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold-hi),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{margin-top:24px;font-size:19px;color:var(--muted);max-width:30em}
+.hero .lead strong{color:var(--paper);font-weight:600}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.rating{display:flex;align-items:center;gap:14px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}
+.rating .score{font-family:var(--f-display);font-size:40px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.rating .stars{color:var(--gold);letter-spacing:2px;font-size:15px}
+.rating .src{font-size:14px;color:var(--muted);line-height:1.35}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:800;font-stretch:88%;font-size:1rem;text-decoration:none;border-radius:999px;padding:14px 24px;border:2px solid transparent;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-primary{background:var(--orange);color:var(--black)}
-.btn-primary:hover{background:var(--white)}
-.btn-ghost{border-color:var(--line);color:var(--white)}
-.btn-ghost:hover{border-color:var(--white)}
-.btn-sm{padding:10px 18px;font-size:.92rem}
+.shot{position:relative;margin:0}
+.shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.shot figcaption{position:absolute;left:0;top:0;background:var(--ink);padding:8px 12px;color:var(--paper)}
+.cota{position:absolute;left:0;right:0;bottom:-34px;height:28px;overflow:visible}
+.cota line{stroke:var(--gold);stroke-width:1}
+.cota text{fill:var(--gold);font-family:var(--f-mono);font-size:12px;letter-spacing:.08em}
+.cota-v{position:absolute;top:0;bottom:0;right:-34px;width:28px;overflow:visible}
+.cota-v line{stroke:var(--gold);stroke-width:1}
+.cota-v text{fill:var(--gold);font-family:var(--f-mono);font-size:12px;letter-spacing:.08em}
+.draw{stroke-dasharray:1200;stroke-dashoffset:0;animation:draw 1.6s cubic-bezier(.6,0,.2,1) both .3s}
+@keyframes draw{from{stroke-dashoffset:1200}}
 
-/* hero */
-.hero{position:relative;padding:clamp(48px,8vw,96px) 0 clamp(56px,8vw,104px);overflow:hidden;isolation:isolate}
-.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:center}
-.hero h1{font-size:clamp(2.7rem,7.4vw,5.6rem)}
-.nowrap{white-space:nowrap}
-.hero h1 > span{display:block}
-.hero h1 .stroke{display:block;color:transparent;-webkit-text-stroke:2px var(--white)}
-.hero .lede{margin:26px 0 34px;color:#CFCFD4}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-.hero-art{position:relative;justify-self:center;width:min(100%,430px);z-index:0}
-.hero-art::before{content:"";position:absolute;z-index:-1;top:-100vh;bottom:-100vh;left:8%;width:100vw;background:var(--orange);transform:skewX(-10deg)}
-.hero-art svg{position:relative}
-.hero-art .tag{position:absolute;left:-6%;bottom:12%;background:var(--black);color:var(--white);border:2px solid var(--white);font-weight:900;font-style:italic;font-stretch:75%;font-size:1.25rem;line-height:1.05;text-transform:uppercase;padding:12px 16px;transform:rotate(-6deg);border-radius:6px}
-.hero-art .tag span{display:block;color:var(--orange)}
-.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;color:var(--steel);font-size:.95rem}
-.facts span{display:flex;align-items:center;gap:8px}
-.facts svg{width:18px;height:18px;color:var(--orange)}
+/* faixa de serviços */
+.services{border-bottom:1px solid var(--line)}
+.services ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.services li{padding:26px 24px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.services li:first-child{border-left:0;padding-left:0}
+.services li strong{font-family:var(--f-display);font-size:21px;font-weight:650;letter-spacing:-.01em}
+.services li span{font-size:15px;color:var(--muted);line-height:1.45}
 
-@media (prefers-reduced-motion:no-preference){
-  .hero h1 > span{display:block;animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-  .hero h1 > span:nth-child(2){animation-delay:.08s}
-  .hero h1 > span:nth-child(3){animation-delay:.16s}
-  .hero-art{animation:drop .9s .2s cubic-bezier(.2,.7,.2,1) both}
-  @keyframes rise{from{opacity:0;transform:translateY(40px) skewX(-6deg)}to{opacity:1;transform:none}}
-  @keyframes drop{from{opacity:0;transform:translateY(-30px) rotate(4deg)}to{opacity:1;transform:none}}
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-head h2{font-size:clamp(34px,4.4vw,58px);font-variation-settings:"wdth" 85;max-width:15ch}
+.sec-head p{max-width:34em;color:var(--muted)}
+
+/* casas à venda */
+.house{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;padding:44px 0;border-top:1px solid var(--line)}
+.house:last-child{border-bottom:1px solid var(--line)}
+.house.flip{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.house.flip .gallery{order:2}
+.gallery{display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:10px}
+.gallery .main{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--slab)}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs button{padding:0;border:1px solid transparent;background:none;cursor:pointer;opacity:.55;transition:opacity .2s,border-color .2s}
+.thumbs button[aria-pressed="true"]{opacity:1;border-color:var(--gold)}
+.thumbs button:hover{opacity:1}
+.thumbs img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.info{display:flex;flex-direction:column;gap:22px;align-self:center}
+.tag{align-self:flex-start;background:var(--gold);color:#1B1408;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
+.info h3{font-size:clamp(46px,5vw,72px);font-variation-settings:"wdth" 80;font-weight:750;font-variant-numeric:tabular-nums}
+.info h3 small{font-size:.42em;font-weight:500;color:var(--muted);letter-spacing:0}
+.place{color:var(--muted);margin-top:-12px}
+.ficha{display:grid;grid-template-columns:auto 1fr;border-top:1px solid var(--line);font-size:15.5px}
+.ficha dt,.ficha dd{margin:0;padding:11px 0;border-bottom:1px solid var(--line)}
+.ficha dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-right:22px;padding-top:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{border:1px solid var(--line);padding:6px 11px;font-size:14px;color:var(--paper)}
+
+/* obras */
+#obras{background:var(--slab);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.work{position:relative;margin:0;padding:0;border:0;background:var(--ink);cursor:zoom-in;color:var(--paper);text-align:left;overflow:hidden}
+.work img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.work:hover img{transform:scale(1.035)}
+.work .cap{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 14px;background:linear-gradient(transparent,rgba(10,9,8,.88));display:flex;flex-direction:column;gap:3px}
+.work .cap strong{font-family:var(--f-display);font-size:21px;font-weight:650;letter-spacing:-.01em;line-height:1.15}
+.work .cap span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi)}
+.work .count{position:absolute;top:12px;right:12px;background:rgba(14,13,11,.8);font-family:var(--f-mono);font-size:11.5px;padding:4px 8px;letter-spacing:.06em}
+.w1{grid-column:span 7;aspect-ratio:4/3}
+.w2{grid-column:span 5;aspect-ratio:auto}
+.w3{grid-column:span 4;aspect-ratio:4/5}
+.w4{grid-column:span 4;aspect-ratio:4/5}
+.w5{grid-column:span 4;aspect-ratio:4/5}
+
+/* processo */
+.steps{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.steps figure{margin:0;position:sticky;top:96px}
+.steps figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.steps figcaption{margin-top:12px;color:var(--muted);font-size:14.5px}
+.steps ol{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:6px 16px;padding:26px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s,decimal-leading-zero);grid-row:span 2;font-family:var(--f-mono);font-size:14px;color:var(--gold);padding-top:6px}
+.steps li h3{font-size:27px;font-weight:650;letter-spacing:-.01em}
+.steps li p{color:var(--muted);max-width:36em}
+
+/* MCMV */
+.mcmv{border:1px solid var(--line);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.mcmv .txt{padding:48px;display:flex;flex-direction:column;gap:22px}
+.mcmv h2{font-size:clamp(32px,3.8vw,50px);font-variation-settings:"wdth" 85}
+.mcmv ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.mcmv li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.mcmv li::before{content:"";flex:none;width:9px;height:9px;margin-top:8px;background:var(--gold)}
+.mcmv .pic{position:relative;min-height:320px}
+.mcmv .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mcmv .pic span{position:absolute;left:14px;bottom:14px;background:var(--ink);padding:6px 10px}
+
+/* equipe */
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.team div{padding:26px 22px 26px 0;display:flex;flex-direction:column;gap:6px}
+.team div + div{padding-left:22px;border-left:1px solid var(--line)}
+.team dt{color:var(--muted)}
+.team a{color:var(--paper);text-decoration:none;font-family:var(--f-display);font-size:20px;font-weight:600}
+.team a:hover{color:var(--gold-hi)}
+
+/* avaliações */
+.reviews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.review{margin:0;background:var(--slab);border:1px solid var(--line);padding:30px 28px;display:flex;flex-direction:column;gap:20px}
+.review .stars{color:var(--gold);letter-spacing:2px}
+.review blockquote{margin:0;font-size:18px;line-height:1.55}
+.review figcaption{margin-top:auto;font-size:15px;color:var(--muted)}
+.review figcaption b{display:block;color:var(--paper);font-weight:600}
+
+/* contato */
+#contato{border-top:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:end}
+.contact h2{font-size:clamp(44px,6vw,88px);font-variation-settings:"wdth" 80;font-weight:750}
+.contact h2 em{font-style:normal;color:var(--gold)}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.contact dl{margin:0;display:grid;gap:0}
+.contact dl div{padding:16px 0;border-top:1px solid var(--line)}
+.contact dl div:last-child{border-bottom:1px solid var(--line)}
+.contact dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.contact dd{margin:0;font-size:18px}
+.contact dd a{text-decoration-color:var(--gold);text-underline-offset:4px}
+
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* galeria em tela cheia */
+dialog{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh;color:var(--paper)}
+dialog::backdrop{background:rgba(8,7,6,.92)}
+.lb{display:flex;flex-direction:column;gap:12px}
+.lb img{max-height:78vh;width:auto;max-width:100%;margin:0 auto;object-fit:contain}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-bar .t{font-family:var(--f-display);font-size:20px;font-weight:600}
+.lb-bar .ctr{display:flex;gap:8px;align-items:center}
+.lb-bar button{min-height:44px;min-width:44px;background:var(--slab);border:1px solid var(--line);color:var(--paper);font:500 15px var(--f-body);cursor:pointer;padding:0 14px}
+.lb-bar button:hover{border-color:var(--gold)}
+.lb-bar .n{font-family:var(--f-mono);font-size:13px;color:var(--muted);min-width:46px;text-align:center}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.wa-float svg{width:30px;height:30px}
+
+@media (max-width:980px){
+  .links{display:none}
+  .hero .wrap,.house,.house.flip,.steps,.contact,.mcmv{grid-template-columns:minmax(0,1fr)}
+  .house.flip .gallery{order:0}
+  .hero .wrap{gap:64px;padding-top:44px}
+  .shot{margin-right:34px}
+  .services ul{grid-template-columns:1fr 1fr}
+  .services li{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .services li:nth-child(-n+2){border-top:0}
+  .steps figure{position:static}
+  .team{grid-template-columns:1fr 1fr}
+  .team div{padding-left:0!important;border-left:0!important;border-top:1px solid var(--line)}
+  .team div:nth-child(-n+2){border-top:0}
+  .reviews{grid-template-columns:minmax(0,1fr)}
+  .w1,.w2{grid-column:span 12}
+  .w2{aspect-ratio:4/3}
+  .w3,.w4,.w5{grid-column:span 6}
+  .w5{grid-column:span 12;aspect-ratio:4/3}
+  section{padding:72px 0}
 }
-
-/* section base */
-.block{padding:clamp(64px,9vw,112px) 0;border-top:1px solid var(--line)}
-.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(32px,5vw,52px)}
-.head .lede{max-width:46ch}
-
-/* goal chooser */
-.goals{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,3vw,36px);align-items:start}
-.goal-list{display:flex;flex-direction:column;gap:10px}
-.goal{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;text-align:left;font:inherit;color:var(--white);background:var(--surface);border:2px solid var(--surface);border-radius:14px;padding:20px 22px;cursor:pointer;transition:border-color .15s,background-color .15s}
-.goal b{font-weight:900;font-style:italic;font-stretch:75%;font-size:clamp(1.5rem,3vw,2rem);text-transform:uppercase;line-height:1}
-.goal small{display:block;color:var(--steel);font-size:.9rem;margin-top:6px}
-.goal .dot{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
-.goal:hover{border-color:var(--line)}
-.goal[aria-selected="true"]{border-color:var(--orange);background:var(--surface-2)}
-.goal[aria-selected="true"] .dot{border-color:var(--orange);background:var(--orange);box-shadow:inset 0 0 0 4px var(--surface-2)}
-.panel{background:var(--white);color:var(--black);border-radius:22px;padding:clamp(24px,3.5vw,40px);position:relative;overflow:hidden}
-.panel::after{content:"";position:absolute;right:-70px;bottom:-70px;width:150px;height:150px;background:var(--orange);transform:rotate(30deg)}
-.panel h3{font-weight:900;font-style:italic;font-stretch:72%;text-transform:uppercase;font-size:clamp(2rem,4.4vw,3rem);line-height:.92;max-width:12ch;position:relative;z-index:1}
-.panel > p{margin:14px 0 22px;color:#3A3A40;max-width:46ch}
-.picks{list-style:none;display:grid;gap:0;border-top:2px solid var(--black);margin-bottom:26px}
-.picks li{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:16px;padding:14px 0;border-bottom:1px solid #D9D9DE}
-.picks strong{font-weight:800;font-stretch:90%}
-.picks span{color:#4A4A52;font-size:.95rem}
-.panel .btn-primary{background:var(--black);color:var(--white)}
-.panel .btn-primary:hover{background:var(--orange);color:var(--black)}
-.panel .note{font-size:.8rem;color:#6B6B73;margin-top:16px}
-@media (prefers-reduced-motion:no-preference){
-  .panel.swap > *{animation:swap .35s ease both}
-  @keyframes swap{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
-}
-
-/* categories */
-.cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.cat{display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:190px;padding:26px;text-decoration:none;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background-color .15s,color .15s}
-.cat b{font-weight:900;font-style:italic;font-stretch:72%;text-transform:uppercase;font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:.92}
-.cat p{color:var(--steel);font-size:.95rem;max-width:30ch}
-.cat em{font-style:normal;font-weight:700;font-size:.9rem;color:var(--orange)}
-.cat:hover{background:var(--orange);color:var(--black)}
-.cat:hover p,.cat:hover em{color:var(--black)}
-
-/* delivery route */
-.route{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:44px}
-.route::before{content:"";position:absolute;left:11px;right:0;top:11px;height:4px;background:linear-gradient(90deg,var(--orange) 0 66%,var(--line) 66% 100%);border-radius:4px}
-.stop{position:relative}
-.stop::before{content:"";position:absolute;top:-44px;left:0;width:26px;height:26px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 6px var(--black)}
-.stop.far::before{background:var(--black);border:4px solid var(--line)}
-.stop h3{font-size:1.05rem;font-weight:700;color:var(--steel);font-stretch:95%}
-.stop strong{display:block;font-weight:900;font-style:italic;font-stretch:72%;text-transform:uppercase;font-size:clamp(2rem,3.6vw,2.8rem);line-height:.92;margin:8px 0 10px;max-width:9ch}
-.stop.far strong{color:var(--steel)}
-.stop p{color:#CFCFD4;max-width:28ch}
-
-/* how to buy */
-.buy{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}
-.way{background:var(--surface);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px}
-.way.main{background:var(--orange);color:var(--black)}
-.way svg{width:34px;height:34px}
-.way h3{font-weight:900;font-style:italic;font-stretch:75%;text-transform:uppercase;font-size:1.9rem;line-height:.95}
-.way p{color:var(--steel)}
-.way.main p{color:#2A1205}
-.way .btn{margin-top:auto;align-self:flex-start}
-.way.main .btn{background:var(--black);color:var(--white)}
-.way.main .btn:hover{background:var(--white);color:var(--black)}
-
-/* where */
-.where{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(20px,3vw,36px);align-items:stretch}
-.units{display:flex;flex-direction:column;gap:14px}
-.unit{border:1px solid var(--line);border-radius:18px;padding:26px}
-.unit .city{font-weight:900;font-style:italic;font-stretch:72%;text-transform:uppercase;font-size:2.3rem;line-height:.92}
-.unit p{color:#CFCFD4;margin:10px 0 18px}
-.unit .badge{display:inline-block;background:var(--orange);color:var(--black);font-weight:800;font-size:.8rem;border-radius:999px;padding:4px 12px;margin-bottom:12px}
-.unit .row{display:flex;flex-wrap:wrap;gap:10px}
-.map{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:var(--surface);display:grid;place-items:center;text-align:center;color:var(--steel);padding:24px}
-.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.05)}
-.rename{margin-top:22px;color:var(--steel);font-size:.95rem}
-.rename b{color:var(--white)}
-
-/* footer */
-footer{border-top:1px solid var(--line);padding:48px 0 110px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px}
-footer p,footer a{color:var(--steel);font-size:.92rem}
-footer .cols{display:flex;flex-wrap:wrap;gap:40px}
-footer .cols div{display:flex;flex-direction:column;gap:6px}
-footer .cols h4{color:var(--white);font-size:.95rem;font-weight:700;margin-bottom:4px}
-footer .credit{width:100%;padding-top:24px;border-top:1px solid var(--line);font-size:.82rem}
-
-/* floating whatsapp */
-.float{position:fixed;right:18px;bottom:18px;z-index:30;width:62px;height:62px;border-radius:50%;background:var(--orange);color:var(--black);border:3px solid var(--black);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.45)}
-.float svg{width:30px;height:30px}
-
-/* responsive */
-@media (max-width:960px){
-  .hero .wrap{grid-template-columns:1fr}
-  .hero-art{width:min(80%,360px);margin-top:28px}
-  .hero-art::before{top:12%;bottom:-200px;left:-60vw;width:220vw;transform:skewY(-8deg)}
-  .goals,.where{grid-template-columns:1fr}
-  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .buy{grid-template-columns:1fr}
-  .nav a.link{display:none}
-}
-@media (max-width:620px){
+@media (max-width:560px){
   body{font-size:16px}
+  .wrap{padding:0 18px}
+  .nav .btn span{display:none}
   .hide-sm{display:none}
-  .top .wrap{height:60px}
-  .brand b{font-size:1.35rem}
-  .brand small{display:none}
-  .cats{grid-template-columns:1fr}
-  .cat{min-height:0}
-  .route{grid-template-columns:1fr;padding-top:0;padding-left:46px;gap:34px}
-  .route::before{left:11px;top:6px;bottom:6px;right:auto;width:4px;height:auto;background:linear-gradient(180deg,var(--orange) 0 66%,var(--line) 66% 100%)}
-  .stop::before{top:4px;left:-46px}
-  .picks li{grid-template-columns:1fr;gap:2px}
-  .hero-art .tag{font-size:1rem;left:0}
+  .gallery{grid-template-columns:minmax(0,1fr)}
+  .thumbs{flex-direction:row}
+  .thumbs button{flex:1}
+  .mcmv .txt{padding:28px 22px}
+  .mcmv ul{grid-template-columns:1fr}
+  .w3,.w4{grid-column:span 12;aspect-ratio:4/5}
+  .services ul{grid-template-columns:1fr}
+  .services li{border-top:1px solid var(--line)!important}
+  .services li:first-child{border-top:0!important}
+  .team{grid-template-columns:1fr}
+  .team div{border-top:1px solid var(--line)!important}
+  .team div:first-child{border-top:0!important}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .draw{animation:none}
+  .work img{transition:none}
 }
 </style>
 </head>
 <body>
 
-<div class="preview">Prévia feita pela Agência Thauma para a HiperFitness. Na versão final entram as fotos reais da loja e dos produtos.</div>
+<div class="preview">Prévia feita pela <b>Agência Thauma</b> para a GSN Construtora<span class="hide-sm"> · fotos e textos do Instagram e do Google da GSN</span></div>
 
-<header class="top">
+<header class="nav">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="HiperFitness, início">
-      <b>HIPERFITNESS</b>
-      <svg viewBox="0 0 200 8" preserveAspectRatio="none" aria-hidden="true"><path d="M0 7 L200 1 L200 4 L4 8 Z" fill="#FF5B0F"/></svg>
-      <small>Suplementos e moda fitness</small>
+    <a class="logo" href="#topo" aria-label="GSN Construtora, início">
+      <svg viewBox="0 0 26 30" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E2A93A"/><stop offset="1" stop-color="#F6C95C"/></linearGradient></defs><rect x="0" y="16" width="6" height="14" fill="url(#lg)"/><rect x="10" y="8" width="6" height="22" fill="url(#lg)"/><rect x="20" y="0" width="6" height="30" fill="url(#lg)"/></svg>
+      <span class="lw"><small>construtora</small><strong>gsn</strong></span>
     </a>
-    <nav class="nav" aria-label="Seções">
-      <a class="link" href="#objetivo">Seu objetivo</a>
-      <a class="link" href="#loja">Na loja</a>
-      <a class="link" href="#entregas">Entregas</a>
-      <a class="link" href="#onde">Onde estamos</a>
-      <a class="btn btn-primary btn-sm js-wa" href="#" data-msg="Olá! Vim pelo site da HiperFitness e quero fazer um pedido.">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg><span>Pedir<span class="hide-sm"> pelo WhatsApp</span></span>
-      </a>
+    <nav class="links" aria-label="Seções">
+      <a href="#a-venda">Casas à venda</a>
+      <a href="#obras">Obras</a>
+      <a href="#como">Como trabalhamos</a>
+      <a href="#mcmv">Minha Casa Minha Vida</a>
+      <a href="#contato">Contato</a>
     </nav>
+    <a class="btn solid" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Vi%20o%20site%20da%20GSN%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+      <span>Falar no WhatsApp</span>
+    </a>
   </div>
 </header>
 
-<main id="inicio">
-  <section class="hero">
-    <div class="wrap">
+<main id="topo">
+
+<section class="hero" aria-labelledby="h1" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Construtora · Engenharia · Arquitetura</p>
+      <h1 id="h1">Do primeiro traço à <em>entrega da chave.</em></h1>
+      <p class="lead">Construímos o seu sonho com segurança e planejamento. <strong>Projeto, construção e execução de obra em Patos de Minas</strong>, com arquiteta e engenheiros na mesma equipe.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#a-venda">Ver casas à venda</a>
+        <a class="btn" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Quero%20construir%20e%20gostaria%20de%20um%20or%C3%A7amento%20da%20GSN." target="_blank" rel="noopener">Pedir orçamento para construir</a>
+      </div>
+      <div class="rating">
+        <span class="score">5,0</span>
+        <span><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><br><span class="src">nota no Google, com 9 avaliações de clientes e parceiros</span></span>
+      </div>
+    </div>
+    <figure class="shot">
+      <img src="img/hero.jpg" alt="Fachada de casa construída pela GSN, com revestimento em pedra, portas pretas e iluminação acesa" width="1440" height="1080" fetchpriority="high">
+      <figcaption class="mono">Casa finalizada · GSN</figcaption>
+      <svg class="cota" viewBox="0 0 100 28" preserveAspectRatio="none" aria-hidden="true">
+        <line class="draw" x1="0" y1="14" x2="100" y2="14" vector-effect="non-scaling-stroke"/>
+        <line x1="0" y1="4" x2="0" y2="24" vector-effect="non-scaling-stroke"/>
+        <line x1="100" y1="4" x2="100" y2="24" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <span class="mono" style="position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);background:var(--ink);padding:0 10px;color:var(--gold);white-space:nowrap">terreno de 200 m²</span>
+      <svg class="cota-v" viewBox="0 0 28 100" preserveAspectRatio="none" aria-hidden="true">
+        <line class="draw" x1="14" y1="0" x2="14" y2="100" vector-effect="non-scaling-stroke"/>
+        <line x1="4" y1="0" x2="24" y2="0" vector-effect="non-scaling-stroke"/>
+        <line x1="4" y1="100" x2="24" y2="100" vector-effect="non-scaling-stroke"/>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<div class="services">
+  <div class="wrap">
+    <ul>
+      <li><strong>Projetos</strong><span>Arquitetônico, fachada em 3D, luminotécnico e gesso</span></li>
+      <li><strong>Construção</strong><span>Casas residenciais, obras comerciais e galpões</span></li>
+      <li><strong>Execução de obra</strong><span>Engenheiros acompanhando cada etapa, com prazo e custo sob controle</span></li>
+      <li><strong>Documentação</strong><span>Prefeitura, Cemig e Copasa resolvidos por nós</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="a-venda" aria-labelledby="h-venda">
+  <div class="wrap">
+    <div class="sec-head">
       <div>
-        <h1 class="display">
-          <span>Whey, creatina e</span>
-          <span class="nowrap">pré-treino</span>
-          <span class="stroke">em Patos de Minas</span>
-        </h1>
-        <p class="lede">Suplementos, vitaminas e moda fitness das melhores marcas, com ofertas toda semana. Peça pelo WhatsApp e receba em casa com entrega grátis na cidade, ou passe na loja da Rua Major Gote.</p>
-        <div class="actions">
-          <a class="btn btn-primary js-wa" href="#" data-msg="Olá! Vim pelo site da HiperFitness e quero fazer um pedido.">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Pedir pelo WhatsApp
-          </a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Rua+Major+Gote+1085+Centro+Patos+de+Minas+MG" target="_blank" rel="noopener">Ver como chegar</a>
-        </div>
-        <div class="facts">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Entrega grátis em Patos de Minas</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Agora também em Carmo do Paranaíba</span>
+        <p class="eyebrow">Prontas para morar</p>
+        <h2 id="h-venda">Casas à venda no Jardim Panorâmico</h2>
+      </div>
+      <p>Casas construídas pela GSN do projeto ao acabamento. Chame no WhatsApp para saber valores, formas de pagamento e marcar uma visita.</p>
+    </div>
+
+    <article class="house" aria-labelledby="h-147">
+      <div class="gallery" data-gallery>
+        <img class="main" src="img/c147-1.jpg" alt="Fachada da casa de 147,64 m² ao entardecer" width="960" height="1200">
+        <div class="thumbs">
+          <button type="button" aria-pressed="true" data-src="img/c147-1.jpg" data-alt="Fachada da casa de 147,64 m² ao entardecer"><img src="img/c147-1.jpg" alt="" loading="lazy"></button>
+          <button type="button" aria-pressed="false" data-src="img/c147-2.jpg" data-alt="Fachada da casa de 147,64 m² durante o dia, com garagem para 2 carros"><img src="img/c147-2.jpg" alt="" loading="lazy"></button>
+          <button type="button" aria-pressed="false" data-src="img/c147-3.jpg" data-alt="Entrada da casa com jardim e iluminação no beiral"><img src="img/c147-3.jpg" alt="" loading="lazy"></button>
+          <button type="button" aria-pressed="false" data-src="img/c147-4.jpg" data-alt="Sala com pé-direito duplo e gesso rebaixado com iluminação"><img src="img/c147-4.jpg" alt="" loading="lazy"></button>
         </div>
       </div>
+      <div class="info">
+        <span class="tag">À venda</span>
+        <h3 id="h-147">147,64 <small>m²</small></h3>
+        <p class="place">Bairro Jardim Panorâmico · Patos de Minas/MG</p>
+        <dl class="ficha">
+          <dt>Quartos</dt><dd>3, sendo 1 suíte com closet e 2 chuveiros</dd>
+          <dt>Sala</dt><dd>Estar com pé-direito duplo; jantar integrada à cozinha</dd>
+          <dt>Lazer</dt><dd>Área gourmet com lavabo</dd>
+          <dt>Garagem</dt><dd>2 carros</dd>
+          <dt>Também</dt><dd>Banheiro social e área de serviço</dd>
+        </dl>
+        <ul class="chips" aria-label="Acabamento">
+          <li>Porcelanato extra</li><li>Iluminação moderna</li><li>Toda rebaixada em gesso</li><li>Janelas veneziana</li><li>Tubulação para aquecedor solar</li>
+        </ul>
+        <a class="btn solid" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Vi%20no%20site%20a%20casa%20de%20147%2C64%20m%C2%B2%20no%20Jardim%20Panor%C3%A2mico%20e%20quero%20saber%20o%20valor." target="_blank" rel="noopener" style="align-self:flex-start">Quero saber o valor desta casa</a>
+      </div>
+    </article>
 
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 420 440">
-          <defs>
-            <linearGradient id="tubBody" x1="0" x2="1">
-              <stop offset="0" stop-color="#0d0d0f"/><stop offset=".45" stop-color="#2a2a2f"/><stop offset=".6" stop-color="#18181b"/><stop offset="1" stop-color="#050506"/>
-            </linearGradient>
-            <linearGradient id="lid" x1="0" x2="1">
-              <stop offset="0" stop-color="#1a1a1d"/><stop offset=".5" stop-color="#3a3a40"/><stop offset="1" stop-color="#101012"/>
-            </linearGradient>
-            <linearGradient id="band" x1="0" x2="1">
-              <stop offset="0" stop-color="#d94a06"/><stop offset=".5" stop-color="#ff6a24"/><stop offset="1" stop-color="#c94205"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="215" cy="420" rx="190" ry="14" fill="#000" opacity=".45"/>
-          <!-- big tub -->
-          <g>
-            <rect x="40" y="96" width="210" height="318" rx="22" fill="url(#tubBody)"/>
-            <rect x="32" y="62" width="226" height="54" rx="14" fill="url(#lid)"/>
-            <rect x="32" y="104" width="226" height="8" fill="#000" opacity=".35"/>
-            <rect x="40" y="188" width="210" height="130" fill="url(#band)"/>
-            <path d="M40 188 L250 188 L250 200 L40 214 Z" fill="#000" opacity=".18"/>
-            <text x="145" y="246" text-anchor="middle" font-family="Archivo, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" style="font-stretch:70%" font-size="54" fill="#000">WHEY</text>
-            <text x="145" y="282" text-anchor="middle" font-family="Archivo, Arial, Helvetica, sans-serif" font-weight="800" style="font-stretch:85%" font-size="20" fill="#000" letter-spacing="2">PROTEIN</text>
-            <rect x="58" y="96" width="14" height="318" fill="#fff" opacity=".05"/>
-          </g>
-          <!-- small tub -->
-          <g>
-            <rect x="238" y="226" width="150" height="190" rx="16" fill="url(#tubBody)"/>
-            <rect x="232" y="202" width="162" height="38" rx="10" fill="url(#lid)"/>
-            <rect x="238" y="276" width="150" height="78" fill="#fff"/>
-            <text x="313" y="318" text-anchor="middle" font-family="Archivo, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" style="font-stretch:70%" font-size="34" fill="#000">CREATINA</text>
-            <text x="313" y="340" text-anchor="middle" font-family="Archivo, Arial, Helvetica, sans-serif" font-weight="700" font-size="12" fill="#FF5B0F" letter-spacing="1.5">MONOHIDRATADA</text>
-            <rect x="252" y="226" width="10" height="190" fill="#fff" opacity=".05"/>
-          </g>
-        </svg>
-        <div class="tag">Ofertas<span>toda semana</span></div>
+    <article class="house flip" aria-labelledby="h-128">
+      <div class="gallery" data-gallery>
+        <img class="main" src="img/c128-1.jpg" alt="Fachada da casa de 128,90 m² com palmeira e pele de vidro" width="900" height="1200">
+        <div class="thumbs">
+          <button type="button" aria-pressed="true" data-src="img/c128-1.jpg" data-alt="Fachada da casa de 128,90 m² com palmeira e pele de vidro"><img src="img/c128-1.jpg" alt="" loading="lazy"></button>
+          <button type="button" aria-pressed="false" data-src="img/c128-2.jpg" data-alt="Vista da rua da casa de 128,90 m², com garagem para 2 carros"><img src="img/c128-2.jpg" alt="" loading="lazy"></button>
+        </div>
+      </div>
+      <div class="info">
+        <span class="tag">À venda · com piscina</span>
+        <h3 id="h-128">128,90 <small>m²</small></h3>
+        <p class="place">Bairro Jardim Panorâmico · Patos de Minas/MG</p>
+        <dl class="ficha">
+          <dt>Quartos</dt><dd>3, sendo 1 suíte com closet e 2 chuveiros</dd>
+          <dt>Sala</dt><dd>Estar com pé-direito alto; jantar integrada à cozinha</dd>
+          <dt>Lazer</dt><dd>Piscina de 10 mil litros com hidro, cascata e iluminação</dd>
+          <dt>Garagem</dt><dd>2 carros</dd>
+          <dt>Também</dt><dd>Banheiro social e área de serviço</dd>
+        </dl>
+        <ul class="chips" aria-label="Acabamento">
+          <li>Porcelanato extra</li><li>Iluminação moderna</li><li>Toda rebaixada em gesso</li><li>Janelas veneziana</li><li>Tubulação para aquecedor solar</li>
+        </ul>
+        <a class="btn solid" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Vi%20no%20site%20a%20casa%20de%20128%2C90%20m%C2%B2%20com%20piscina%20no%20Jardim%20Panor%C3%A2mico%20e%20quero%20saber%20o%20valor." target="_blank" rel="noopener" style="align-self:flex-start">Quero saber o valor desta casa</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="obras" aria-labelledby="h-obras">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Portfólio</p>
+        <h2 id="h-obras">Obras entregues pela GSN</h2>
+      </div>
+      <p>Algumas das casas que saíram do papel com a nossa equipe. Toque em uma obra para ver mais fotos.</p>
+    </div>
+    <div class="grid">
+      <button type="button" class="work w1" data-title="Casa finalizada · terreno de 200 m²" data-imgs="img/hero.jpg|img/casa200-2.jpg|img/casa200-3.jpg|img/casa200-4.jpg">
+        <img src="img/hero.jpg" alt="Casa finalizada em terreno de 200 m², fachada com pedra e iluminação" loading="lazy">
+        <span class="count">4 fotos</span>
+        <span class="cap"><span>Terreno de 200 m²</span><strong>Casa finalizada com fachada em pedra</strong></span>
+      </button>
+      <button type="button" class="work w2" data-title="Casa S | L" data-imgs="img/casasl-1.jpg|img/casasl-2.jpg">
+        <img src="img/casasl-1.jpg" alt="Casa S | L, fachada com pedras, pele de vidro e marquise em madeira" loading="lazy">
+        <span class="count">2 fotos</span>
+        <span class="cap"><span>Residencial</span><strong>Casa S | L</strong></span>
+      </button>
+      <button type="button" class="work w3" data-title="Casa 105,64 m² · Residencial Sorriso" data-imgs="img/c105-1.jpg|img/c105-2.jpg">
+        <img src="img/c105-1.jpg" alt="Casa de 105,64 m² no Residencial Sorriso, fachada branca" loading="lazy">
+        <span class="count">2 fotos</span>
+        <span class="cap"><span>Residencial Sorriso</span><strong>Casa de 105,64 m²</strong></span>
+      </button>
+      <button type="button" class="work w4" data-title="Casa 145 m² · Jardim Panorâmico" data-imgs="img/banho-1.jpg|img/banho-2.jpg">
+        <img src="img/banho-1.jpg" alt="Banheiro com porcelanato e bancada em granito preto" loading="lazy">
+        <span class="count">2 fotos</span>
+        <span class="cap"><span>Acabamento</span><strong>Casa de 145 m², Jardim Panorâmico</strong></span>
+      </button>
+      <button type="button" class="work w5" data-title="Casa R | S · Minha Casa Minha Vida" data-imgs="img/mcmv-1.jpg">
+        <img src="img/mcmv-1.jpg" alt="Cozinha de casa do Minha Casa Minha Vida com porcelanato e bancada em granito" loading="lazy">
+        <span class="count">1 foto</span>
+        <span class="cap"><span>Minha Casa Minha Vida · 50 m²</span><strong>Casa R | S</strong></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="como" aria-labelledby="h-como">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Como trabalhamos</p>
+        <h2 id="h-como">Você acompanha, a gente resolve</h2>
+      </div>
+      <p>Construir envolve projeto, aprovação, documentos e muita obra. A GSN cuida de cada etapa para você só se preocupar em escolher o acabamento.</p>
+    </div>
+    <div class="steps">
+      <figure>
+        <img src="img/antes-projeto.jpg" alt="Comparação entre o terreno antes da obra e o projeto 3D da fachada" loading="lazy">
+        <figcaption>Antes e projeto 3D da fachada, feito pela arquiteta da GSN antes da obra começar.</figcaption>
+      </figure>
+      <ol>
+        <li><h3>Projeto e fachada em 3D</h3><p>Projeto arquitetônico, luminotécnico e de gesso, com a fachada em 3D para você ver a casa pronta antes do primeiro tijolo.</p></li>
+        <li><h3>Aprovação e documentos</h3><p>Cuidamos da aprovação do projeto e dos trâmites na prefeitura, na Cemig e na Copasa.</p></li>
+        <li><h3>Execução da obra</h3><p>Engenheiros e mestre de obras acompanhando cada fase, com equipe qualificada e controle de custos e prazos.</p></li>
+        <li><h3>Entrega da chave</h3><p>Casa pronta, com acabamento conferido e tudo regularizado para você mudar.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="mcmv" aria-labelledby="h-mcmv" style="padding-top:0">
+  <div class="wrap">
+    <div class="mcmv">
+      <div class="txt">
+        <p class="eyebrow" style="margin:0">Financiamento pela Caixa</p>
+        <h2 id="h-mcmv">Seu lote + sua casa pelo Minha Casa Minha Vida</h2>
+        <p style="color:var(--muted)">Saia do aluguel com um projeto moderno e acompanhamento da GSN do lote até a casa pronta.</p>
+        <ul>
+          <li>Entrada parcelada em até 15x sem juros</li>
+          <li>Projeto arquitetônico incluso</li>
+          <li>Planilhas exigidas pela Caixa inclusas</li>
+          <li>Porcelanato na casa toda e bancadas em granito</li>
+        </ul>
+        <a class="btn solid" style="align-self:flex-start" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Quero%20fazer%20uma%20simula%C3%A7%C3%A3o%20do%20Minha%20Casa%20Minha%20Vida%20com%20a%20GSN." target="_blank" rel="noopener">Pedir uma simulação sem compromisso</a>
+      </div>
+      <div class="pic">
+        <img src="img/c105-2.jpg" alt="Casa térrea construída pela GSN no Residencial Sorriso" loading="lazy">
+        <span class="mono">Residencial Sorriso</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block" id="objetivo">
-    <div class="wrap">
-      <div class="head">
-        <h2 class="display">Qual é o seu objetivo?</h2>
-        <p class="lede">Escolha o que você quer alcançar e veja por onde começar. Na dúvida, a equipe da loja te ajuda a montar a combinação certa pelo WhatsApp.</p>
-      </div>
-      <div class="goals">
-        <div class="goal-list" role="tablist" aria-label="Objetivos">
-          <button class="goal" role="tab" aria-selected="true" aria-controls="goal-panel" data-goal="massa"><span><b>Ganhar massa</b><small>Hipertrofia e recuperação</small></span><span class="dot"></span></button>
-          <button class="goal" role="tab" aria-selected="false" aria-controls="goal-panel" data-goal="energia"><span><b>Mais energia no treino</b><small>Força, foco e pump</small></span><span class="dot"></span></button>
-          <button class="goal" role="tab" aria-selected="false" aria-controls="goal-panel" data-goal="corrida"><span><b>Correr melhor</b><small>Rendimento e resistência</small></span><span class="dot"></span></button>
-          <button class="goal" role="tab" aria-selected="false" aria-controls="goal-panel" data-goal="saude"><span><b>Saúde e beleza</b><small>Vitaminas do dia a dia</small></span><span class="dot"></span></button>
-        </div>
-        <div class="panel" id="goal-panel" role="tabpanel" aria-live="polite"></div>
+<section aria-labelledby="h-equipe" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:28px">
+      <div>
+        <p class="eyebrow">Equipe GSN</p>
+        <h2 id="h-equipe">Quem cuida da sua obra</h2>
       </div>
     </div>
-  </section>
+    <dl class="team">
+      <div><dt>Arquitetura e projetos</dt><dd style="margin:0"><a href="https://www.instagram.com/arqlia/" target="_blank" rel="noopener">@arqlia</a></dd></div>
+      <div><dt>Engenharia e execução</dt><dd style="margin:0"><a href="https://www.instagram.com/luissousa.eng/" target="_blank" rel="noopener">@luissousa.eng</a></dd></div>
+      <div><dt>Engenharia e execução</dt><dd style="margin:0"><a href="https://www.instagram.com/julianaqueiroz.eng/" target="_blank" rel="noopener">@julianaqueiroz.eng</a></dd></div>
+      <div><dt>Construtora</dt><dd style="margin:0"><a href="https://www.instagram.com/gsnconstrutora/" target="_blank" rel="noopener">@gsnconstrutora</a></dd></div>
+    </dl>
+  </div>
+</section>
 
-  <section class="block" id="loja">
-    <div class="wrap">
-      <div class="head">
-        <h2 class="display">O que tem na loja</h2>
-        <p class="lede">As melhores marcas do mercado, com promoções que mudam toda semana. Toque numa categoria para consultar preços e sabores disponíveis.</p>
-      </div>
-      <div class="cats">
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as opções de whey e proteínas disponíveis."><b>Proteínas</b><p>Whey e outras proteínas para fechar a meta do dia.</p><em>Consultar opções</em></a>
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as opções de creatina disponíveis."><b>Creatinas</b><p>Creatina das marcas mais procuradas, para força e desempenho.</p><em>Consultar opções</em></a>
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as opções de pré-treino disponíveis."><b>Pré-treinos</b><p>Com cafeína para quem quer energia, e sem cafeína para quem treina à noite.</p><em>Consultar opções</em></a>
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as opções de aminoácidos disponíveis."><b>Aminoácidos</b><p>Glutamina e outros aliados da recuperação entre os treinos.</p><em>Consultar opções</em></a>
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as opções de vitaminas disponíveis."><b>Vitaminas</b><p>Biotina, multivitamínicos e o básico para a saúde do dia a dia.</p><em>Consultar opções</em></a>
-        <a class="cat js-wa" href="#" data-msg="Olá! Quero ver as peças de moda fitness disponíveis."><b>Moda fitness</b><p>Roupas para treinar com conforto e chegar na academia bem vestido.</p><em>Consultar opções</em></a>
+<section aria-labelledby="h-aval" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Avaliações no Google · 5,0</p>
+        <h2 id="h-aval">O que dizem de quem já construiu</h2>
       </div>
     </div>
-  </section>
+    <div class="reviews">
+      <figure class="review">
+        <span class="stars" aria-label="5 estrelas">★★★★★</span>
+        <blockquote>“Fiz minha casa com eles, me auxiliaram em tudo, me instruíram a colocar os melhores materiais, sempre visando o melhor preço, fizeram os trâmites na Cemig, Copasa e prefeitura, me respondiam até a noite no WhatsApp…”</blockquote>
+        <figcaption><b>Bianca Gabriela</b>Cliente · Google</figcaption>
+      </figure>
+      <figure class="review">
+        <span class="stars" aria-label="5 estrelas">★★★★★</span>
+        <blockquote>“Desde o primeiro contato à entrega das chaves, todos os profissionais envolvidos demonstraram profissionalismo e dedicação. Estamos extremamente satisfeitos com a nossa nova casa.”</blockquote>
+        <figcaption><b>Barbara Silva</b>Cliente · Google</figcaption>
+      </figure>
+      <figure class="review">
+        <span class="stars" aria-label="5 estrelas">★★★★★</span>
+        <blockquote>“Excelentes profissionais, com compromisso, empenhados a responder, são excelentes parceiros aqui para Sozo.”</blockquote>
+        <figcaption><b>Ana Britto Imóveis</b>Imobiliária parceira · Google</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-  <section class="block" id="entregas">
-    <div class="wrap">
-      <div class="head">
-        <h2 class="display">Entregamos para todo o Brasil</h2>
-        <p class="lede">Saindo de Patos de Minas, quanto mais perto, mais fácil fica.</p>
-      </div>
-      <div class="route">
-        <div class="stop">
-          <h3>Patos de Minas</h3>
-          <strong>Grátis</strong>
-          <p>Entrega sem custo dentro da cidade.</p>
-        </div>
-        <div class="stop">
-          <h3>Minas Gerais</h3>
-          <strong>Grátis acima de R$ 299</strong>
-          <p>Frete grátis para todo o estado em compras a partir desse valor.</p>
-        </div>
-        <div class="stop far">
-          <h3>Demais estados</h3>
-          <strong>Consulte o frete</strong>
-          <p>Mande seu CEP no WhatsApp e a gente calcula o frete.</p>
-        </div>
+<section id="contato" aria-labelledby="h-contato">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Contato</p>
+      <h2 id="h-contato">Vamos construir o seu <em>sonho?</em></h2>
+      <div class="ctas">
+        <a class="btn solid" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Vi%20o%20site%20da%20GSN%20e%20quero%20conversar%20sobre%20a%20minha%20obra." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=GSN%20Construtora%20R.%20Te%C3%B3filo%20Otoni%2043%20Patos%20de%20Minas" target="_blank" rel="noopener">Abrir no Google Maps</a>
       </div>
     </div>
-  </section>
+    <dl>
+      <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5534991669556" target="_blank" rel="noopener">(34) 99166-9556</a></dd></div>
+      <div><dt>Endereço</dt><dd>R. Teófilo Otoni, 43 · Centro<br>Patos de Minas/MG · 38700-056</dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/gsnconstrutora/" target="_blank" rel="noopener">@gsnconstrutora</a></dd></div>
+    </dl>
+  </div>
+</section>
 
-  <section class="block" id="comprar">
-    <div class="wrap">
-      <div class="head">
-        <h2 class="display">Como comprar</h2>
-        <p class="lede">Do jeito que for mais fácil para você.</p>
-      </div>
-      <div class="buy">
-        <div class="way main">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
-          <h3>Pelo WhatsApp</h3>
-          <p>Faça seu pedido, tire dúvidas sobre produtos e receba atendimento de quem entende de suplementação.</p>
-          <a class="btn js-wa" href="#" data-msg="Olá! Vim pelo site da HiperFitness e quero fazer um pedido.">Chamar no WhatsApp</a>
-        </div>
-        <div class="way">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
-          <h3>Pelo Direct</h3>
-          <p>Fale com a equipe pelo Instagram e acompanhe as promoções da semana.</p>
-          <a class="btn btn-ghost" href="https://www.instagram.com/hiperfitnesss/" target="_blank" rel="noopener">Abrir o Instagram</a>
-        </div>
-        <div class="way">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M3 9v11h18V9M3 9h18M9 20v-6h6v6"/></svg>
-          <h3>Na loja física</h3>
-          <p>Venha conhecer os produtos e receba orientação para escolher a melhor opção.</p>
-          <a class="btn btn-ghost" href="#onde">Ver endereço</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="onde">
-    <div class="wrap">
-      <div class="head">
-        <h2 class="display">Onde estamos</h2>
-      </div>
-      <div class="where">
-        <div class="units">
-          <div class="unit">
-            <div class="city">Patos de Minas</div>
-            <p>Rua Major Gote, 1085, Centro<br>Patos de Minas, MG</p>
-            <div class="row">
-              <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&query=Rua+Major+Gote+1085+Centro+Patos+de+Minas+MG" target="_blank" rel="noopener">Abrir no mapa</a>
-              <a class="btn btn-ghost btn-sm" href="tel:+5534976010694">Ligar (34) 97601-0694</a>
-            </div>
-          </div>
-          <div class="unit">
-            <span class="badge">Unidade nova</span>
-            <div class="city">Carmo do Paranaíba</div>
-            <p>A HiperFitness chegou a Carmo do Paranaíba. Chame no WhatsApp para saber o endereço e o que já tem na loja.</p>
-            <div class="row">
-              <a class="btn btn-ghost btn-sm js-wa" href="#" data-msg="Olá! Quero saber o endereço da HiperFitness em Carmo do Paranaíba.">Perguntar o endereço</a>
-            </div>
-          </div>
-          <p class="rename">Conhecia a <b>AX Suplementos</b>? Agora ela é <b>HiperFitness</b>. Mesma dedicação, nova fase.</p>
-        </div>
-        <div class="map">
-          <p>Rua Major Gote, 1085, Centro, Patos de Minas</p>
-          <iframe title="Mapa da HiperFitness em Patos de Minas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Major+Gote,+1085,+Centro,+Patos+de+Minas+-+MG&output=embed"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="HiperFitness, voltar ao início">
-      <b>HIPERFITNESS</b>
-      <svg viewBox="0 0 200 8" preserveAspectRatio="none" aria-hidden="true"><path d="M0 7 L200 1 L200 4 L4 8 Z" fill="#FF5B0F"/></svg>
-      <small>Suplementos e moda fitness</small>
-    </a>
-    <div class="cols">
-      <div>
-        <h4>Contato</h4>
-        <a class="js-wa" href="#" data-msg="Olá! Vim pelo site da HiperFitness.">WhatsApp (34) 97601-0694</a>
-        <a href="https://www.instagram.com/hiperfitnesss/" target="_blank" rel="noopener">Instagram @hiperfitnesss</a>
-      </div>
-      <div>
-        <h4>Lojas</h4>
-        <p>Rua Major Gote, 1085, Centro, Patos de Minas</p>
-        <p>Carmo do Paranaíba, MG</p>
-      </div>
-    </div>
-    <p class="credit">© 2026 HiperFitness Suplementos. Site desenvolvido pela Agência Thauma.</p>
+    <span>GSN Construtora · Engenharia · Arquitetura · Excelência que constrói o futuro.</span>
+    <span>Prévia de site feita pela Agência Thauma</span>
   </div>
 </footer>
 
-<a class="float js-wa" href="#" data-msg="Olá! Vim pelo site da HiperFitness e quero fazer um pedido." aria-label="Pedir pelo WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>
+<a class="wa-float" href="https://wa.me/5534991669556?text=Ol%C3%A1!%20Vi%20o%20site%20da%20GSN%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a GSN no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
 </a>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></symbol>
-</svg>
+<dialog id="lb" aria-label="Fotos da obra">
+  <div class="lb">
+    <img id="lb-img" src="" alt="">
+    <div class="lb-bar">
+      <span class="t" id="lb-title"></span>
+      <span class="ctr">
+        <button type="button" id="lb-prev" aria-label="Foto anterior">←</button>
+        <span class="n" id="lb-n"></span>
+        <button type="button" id="lb-next" aria-label="Próxima foto">→</button>
+        <button type="button" id="lb-close">Fechar</button>
+      </span>
+    </div>
+  </div>
+</dialog>
 
 <script>
 (function(){
-  var PHONE = "5534976010694";
-  function wa(msg){ return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg); }
-  document.querySelectorAll(".js-wa").forEach(function(a){
-    a.href = wa(a.getAttribute("data-msg") || "Olá! Vim pelo site da HiperFitness.");
-    a.target = "_blank"; a.rel = "noopener";
+  // galeria das casas à venda
+  document.querySelectorAll('[data-gallery]').forEach(function(g){
+    var main = g.querySelector('.main');
+    var btns = g.querySelectorAll('.thumbs button');
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        main.src = b.dataset.src; main.alt = b.dataset.alt;
+        btns.forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      });
+    });
   });
 
-  var goals = {
-    massa: {
-      title: "Ganhar massa",
-      text: "O treino é o estímulo, mas o músculo cresce no descanso e na alimentação. Esses são os básicos que ajudam a fechar a conta.",
-      picks: [["Whey protein","Prático para bater a proteína do dia, no pós-treino ou no lanche."],["Creatina","Uma das mais estudadas para força e desempenho."],["Glutamina","Aliada da recuperação entre um treino e outro."]],
-      msg: "Olá! Vim pelo site e quero uma indicação de suplementos para ganhar massa."
-    },
-    energia: {
-      title: "Mais energia no treino",
-      text: "Para treinar pesado com foco do começo ao fim, com ou sem estimulante.",
-      picks: [["Pré-treino com cafeína","Energia e disposição para os treinos mais intensos."],["Pré-treino sem cafeína","Pump e foco sem estimulante, bom para quem treina à noite."],["Creatina","Mais força nas séries pesadas ao longo das semanas."]],
-      msg: "Olá! Vim pelo site e quero uma indicação de pré-treino."
-    },
-    corrida: {
-      title: "Correr melhor",
-      text: "Para render mais, recuperar mais rápido e evitar aquele cansaço que bate no meio do treino.",
-      picks: [["Energia durante o treino","Opções práticas de carboidrato para treinos longos e provas."],["Hidratação","Reposição de sais minerais para os dias de calor e de volume alto."],["Recuperação","Proteína e aminoácidos para voltar inteiro no dia seguinte."]],
-      msg: "Olá! Vim pelo site e quero uma indicação de suplementos para corrida."
-    },
-    saude: {
-      title: "Saúde e beleza",
-      text: "Suplementação também é cuidar do básico: cabelo, pele, unhas e disposição no dia a dia.",
-      picks: [["Biotina","Vitamina B7, procurada para realçar cabelos, unhas e pele."],["Multivitamínicos","Para complementar a alimentação da semana."],["Vitaminas específicas","A equipe ajuda a escolher conforme a sua rotina."]],
-      msg: "Olá! Vim pelo site e quero uma indicação de vitaminas."
-    }
-  };
-
-  var panel = document.getElementById("goal-panel");
-  var tabs = document.querySelectorAll(".goal");
-
-  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
-
-  function render(key){
-    var g = goals[key];
-    var items = g.picks.map(function(p){ return "<li><strong>" + esc(p[0]) + "</strong><span>" + esc(p[1]) + "</span></li>"; }).join("");
-    panel.innerHTML =
-      "<h3>" + esc(g.title) + "</h3>" +
-      "<p>" + esc(g.text) + "</p>" +
-      "<ul class=\"picks\">" + items + "</ul>" +
-      "<a class=\"btn btn-primary\" target=\"_blank\" rel=\"noopener\" href=\"" + wa(g.msg) + "\">Pedir indicação pelo WhatsApp</a>" +
-      "<p class=\"note\">Indicações gerais. Para dúvidas de saúde, converse com seu nutricionista ou médico.</p>";
-    panel.classList.remove("swap"); void panel.offsetWidth; panel.classList.add("swap");
+  // fotos das obras em tela cheia
+  var dlg = document.getElementById('lb');
+  var img = document.getElementById('lb-img');
+  var ttl = document.getElementById('lb-title');
+  var num = document.getElementById('lb-n');
+  var list = [], i = 0, name = '';
+  function show(){
+    img.src = list[i];
+    img.alt = name + ', foto ' + (i + 1) + ' de ' + list.length;
+    num.textContent = (i + 1) + ' / ' + list.length;
+    var multi = list.length > 1;
+    document.getElementById('lb-prev').hidden = !multi;
+    document.getElementById('lb-next').hidden = !multi;
   }
-
-  tabs.forEach(function(t, i){
-    t.addEventListener("click", function(){
-      tabs.forEach(function(o){ o.setAttribute("aria-selected", o === t ? "true" : "false"); o.tabIndex = o === t ? 0 : -1; });
-      render(t.getAttribute("data-goal"));
+  document.querySelectorAll('.work').forEach(function(w){
+    w.addEventListener('click', function(){
+      list = w.dataset.imgs.split('|'); i = 0; name = w.dataset.title;
+      ttl.textContent = name; show();
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
     });
-    t.addEventListener("keydown", function(e){
-      var n = null;
-      if (e.key === "ArrowDown" || e.key === "ArrowRight") n = tabs[(i + 1) % tabs.length];
-      if (e.key === "ArrowUp" || e.key === "ArrowLeft") n = tabs[(i - 1 + tabs.length) % tabs.length];
-      if (n){ e.preventDefault(); n.focus(); n.click(); }
-    });
-    t.tabIndex = i === 0 ? 0 : -1;
   });
-
-  render("massa");
-  panel.classList.remove("swap");
+  document.getElementById('lb-prev').addEventListener('click', function(){ i = (i - 1 + list.length) % list.length; show(); });
+  document.getElementById('lb-next').addEventListener('click', function(){ i = (i + 1) % list.length; show(); });
+  document.getElementById('lb-close').addEventListener('click', function(){ dlg.close ? dlg.close() : dlg.removeAttribute('open'); });
+  dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight') { i = (i + 1) % list.length; show(); }
+    if (e.key === 'ArrowLeft') { i = (i - 1 + list.length) % list.length; show(); }
+  });
 })();
 </script>
 </body>
